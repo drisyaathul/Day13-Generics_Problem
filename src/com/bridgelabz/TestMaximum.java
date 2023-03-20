@@ -1,7 +1,13 @@
 package com.bridgelabz;
 
-public class TestMaximum {
-    //find the maximum value by One Generic Method:
+public class TestMaximum <T extends Comparable <T>>{
+    T a,b,c;
+
+    public TestMaximum(T a, T b, T c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
     static <T extends Comparable <T>> T maximumValue(T a, T b, T c){
 
         T max = a;
