@@ -11,9 +11,19 @@ public class TestMaximum {
             max = c;
         System.out.println("The Maximum of Three Integers (" + a + ","+ b +","+ c +") is "+max );
     }
+
+    public static void findMaximumValue(Float d, Float e, Float f){
+        Float max = d;
+        if (e.compareTo(max) > 0)
+            max = e;
+        if (f.compareTo(max) > 0)
+            max = f;
+        System.out.println("The Maximum of Three Floats (" + d + ", " + e + ", " + f + ") is " +max);
+    }
     public static void main(String[] args) {
         System.out.println("*** Welcome to Generics Problem ***");
 
         findMaximumValue(20,80,60);
+        findMaximumValue(7.29f,3.10f,9.23f);
     }
 }
