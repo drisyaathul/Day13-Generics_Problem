@@ -1,40 +1,22 @@
 package com.bridgelabz;
 
 public class TestMaximum {
-    //find the maximum of three Integer
-    public static void findMaximumValue(Integer a, Integer b, Integer c){
+    //find the maximum value by One Generic Method:
+    static <T extends Comparable <T>> T maximumValue(T a, T b, T c){
 
-        Integer max = a;
+        T max = a;
         if (b.compareTo(max) > 0)
-            max = b;
+        max = b;
         if (c.compareTo(max) > 0)
-            max = c;
-        System.out.println("The Maximum value of Three Integers (" + a + ","+ b +","+ c +") is "+max );
-    }
-
-    public static void findMaximumValue(Float d, Float e, Float f){
-        Float max = d;
-        if (e.compareTo(max) > 0)
-            max = e;
-        if (f.compareTo(max) > 0)
-            max = f;
-        System.out.println("The Maximum value of Three Floats (" + d + ", " + e + ", " + f + ") is " +max);
-    }
-
-    public static void findMaximumValue(String x, String y, String z){
-        String max = x;
-        if (y.compareTo(max) > 0)
-            max = y;
-        if (z.compareTo(max) > 0)
-            max = z;
-        System.out.println("The Maximum value of Three Strings (" + x + ", " + y + ", " + z + ") is " +max);
+        max = c;
+        return max;
     }
     public static void main(String[] args) {
         System.out.println("*** Welcome to Generics Problem ***");
 
-        findMaximumValue(20,80,60);
-        findMaximumValue(7.29f,3.10f,9.23f);
-        findMaximumValue("Apple","Peach","Banana");
+        System.out.println("The Maximum Value in Three Integers : "+maximumValue(20, 80, 60));
+        System.out.println("The Maximum Value in Three Floats : "+maximumValue(7.29f, 3.10f, 9.23f));
+        System.out.println("The Maximum Value in Three Strings : "+maximumValue("Apple", "Peach", "Banana"));
 
     }
 }
