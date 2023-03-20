@@ -9,7 +9,7 @@ public class TestMaximum {
             max = b;
         if (c.compareTo(max) > 0)
             max = c;
-        System.out.println("The Maximum of Three Integers (" + a + ","+ b +","+ c +") is "+max );
+        System.out.println("The Maximum value of Three Integers (" + a + ","+ b +","+ c +") is "+max );
     }
 
     public static void findMaximumValue(Float d, Float e, Float f){
@@ -18,7 +18,7 @@ public class TestMaximum {
             max = e;
         if (f.compareTo(max) > 0)
             max = f;
-        System.out.println("The Maximum of Three Floats (" + d + ", " + e + ", " + f + ") is " +max);
+        System.out.println("The Maximum value of Three Floats (" + d + ", " + e + ", " + f + ") is " +max);
     }
 
     public static void findMaximumValue(String x, String y, String z){
@@ -27,7 +27,7 @@ public class TestMaximum {
             max = y;
         if (z.compareTo(max) > 0)
             max = z;
-        System.out.println("The Maximum of Three Strings (" + x + ", " + y + ", " + z + ") is " +max);
+        System.out.println("The Maximum value of Three Strings (" + x + ", " + y + ", " + z + ") is " +max);
     }
     public static void main(String[] args) {
         System.out.println("*** Welcome to Generics Problem ***");
